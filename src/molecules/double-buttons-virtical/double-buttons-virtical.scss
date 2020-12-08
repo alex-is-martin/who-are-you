@@ -1,0 +1,6 @@
+@import "../../assets/styles/mixins.scss";
+
+.btn-wrapper-virtical {
+  @include center-elements-virtical;
+  @include wrap-content;
+}

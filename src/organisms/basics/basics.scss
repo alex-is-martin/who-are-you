@@ -1,0 +1,34 @@
+@import "../../assets/styles/mixins.scss";
+@import "../../assets/styles/variables.scss";
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-title {
+    font-size: $section-title-size;
+    color: $section-title-color;
+    width: $section-width;
+    margin: 4rem 0 0rem 0;
+  }
+
+  #horizontal-line {
+    height: 1px;
+    border-top: 1px solid #999;
+    width: $line-width;
+    margin: 1rem 0;
+  }
+
+  .section-list {
+    width: $section-width;
+    color: $section-info-color;
+    font-size: $section-info-size;
+
+    li {
+      @include wrap-content;
+      white-space: nowrap;
+      list-style-type: none;
+    }
+  }
+}

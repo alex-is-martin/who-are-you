@@ -1,0 +1,15 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+#navbar {
+  @include center-elements;
+  @include wrap-height;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: $navbar-color;
+  padding: 0.5rem 1rem;
+
+  .btn-img {
+    width: 10rem;
+  }
+}

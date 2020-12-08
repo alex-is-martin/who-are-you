@@ -1,0 +1,67 @@
+@mixin center-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center-elements-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin center-elements-virtical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin space-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin fill-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+@mixin wrap-content {
+  width: auto;
+  height: auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+@mixin wrap-height {
+  width: 100%;
+  height: auto;
+  height: fit-content;
+}
+
+@mixin btn-default {
+  width: auto;
+  height: 3rem;
+  margin: 1rem;
+  padding: 0rem 2rem;
+
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+@mixin btn-blank {
+  @include wrap-content;
+  margin: 1rem;
+
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+
+  white-space: nowrap;
+}

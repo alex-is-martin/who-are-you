@@ -1,0 +1,6 @@
+@import "../../assets/styles/mixins.scss";
+
+.btn-img {
+  @include wrap-content;
+  margin: 1rem;
+}

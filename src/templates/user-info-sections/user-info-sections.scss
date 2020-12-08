@@ -1,0 +1,8 @@
+@import "../../assets/styles/mixins.scss";
+
+#user-info-sections {
+  @include fill-wrapper;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
