@@ -19,7 +19,7 @@
 @mixin space-elements {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  //align-items: center;
 }
 
 @mixin fill-wrapper {

@@ -1,0 +1,13 @@
+.image-container {
+  width: 100%;
+
+  .img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .user-img {
+    object-fit: cover;
+    width: 80%;
+  }
+}

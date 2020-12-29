@@ -3,20 +3,27 @@ import "./navbar.scss";
 import ImageButton from "../../atoms/image-button/ImageButton";
 import imageSrc from "../../assets/images/Who-Are-You Logo.png";
 import DoubleButtonsHorizontal from "../../molecules/double-buttons-horizontal/DoubleButtonsHorizontal";
+import Button from "../../atoms/button/Button";
+import { Link } from "react-router-dom";
 
 function Navbar()
 {
     return (
         <div id="navbar">
-            <ImageButton href="" src={imageSrc} alt="Who are you logo"/>
-            <DoubleButtonsHorizontal 
-                href_1="" 
-                class_1="btn-blank" 
-                text_1 ="Sign In"
-                href_2="" 
-                class_2="btn-blank" 
-                text_2 ="Sign Up"
-            />
+            <Link to="/who-are-you">
+                <ImageButton href="" src={imageSrc} alt="Who are you logo"/>
+            </Link>
+            <div className="nav-btn-container">
+                <Link className="link" to="/profile">
+                    <Button className="btn-blank" text="Profile"/>
+                </Link>
+                <Link className="link" to="/sign-in">
+                    <Button className="btn-blank" text="Sign In"/>
+                </Link>
+                <Link className="link" to="/sign-up">
+                    <Button className="btn-blank" text="Sign Up"/>
+                </Link>
+            </div>
         </div>
     );
 }

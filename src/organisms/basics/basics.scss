@@ -13,22 +13,36 @@
     margin: 4rem 0 0rem 0;
   }
 
-  #horizontal-line {
-    height: 1px;
-    border-top: 1px solid #999;
-    width: $line-width;
-    margin: 1rem 0;
-  }
-
   .section-list {
     width: $section-width;
     color: $section-info-color;
     font-size: $section-info-size;
 
-    li {
+    .sub-title {
+      color: $section-sub-title-color;
+      font-weight: $section-sub-title-weight;
+    }
+
+    .list-item {
       @include wrap-content;
+      @include center-elements-horizontal;
       white-space: nowrap;
       list-style-type: none;
+      margin: 0.5rem 0;
+
+      &-spaced {
+        @extend .list-item;
+        margin-top: 2rem;
+      }
+
+      &-tabbed {
+        @extend .list-item;
+        margin-left: 2rem;
+      }
     }
+  }
+
+  .undo-space {
+    margin-top: 0 !important;
   }
 }

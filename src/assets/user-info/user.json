@@ -5,11 +5,11 @@
       "picture": "test",
       "email": "john@gmail.com",
       "phone": "(912) 555-4321",
-      "website": "http://johndoe.com",
+      "website": "www.johndoe.com",
       "summary": "A summary of John Doe...",
       "location": {
         "address": "2712 Broadway St",
-        "postalCode": "CA 94115",
+        "postalCode": "94115",
         "city": "San Francisco",
         "countryCode": "US",
         "region": "California"
@@ -18,17 +18,37 @@
         "network": "Twitter",
         "username": "john",
         "url": "http://twitter.com/john"
+      },{
+        "network": "Facebook",
+        "username": "johnnyBoy",
+        "url": "http://facebook.com/johnnyBoy"
       }]
     },
     "work": [{
-      "company": "Company",
+      "company": "Spotify New York",
       "position": "President",
-      "website": "http://company.com",
+      "rank" : "Primary",
+      "website": "www.spotify.com",
       "startDate": "2013-01-01",
       "endDate": "2014-01-01",
       "summary": "Description...",
       "highlights": [
-        "Started the company"
+        "Started the company",
+        "Created a company",
+        "Worked at my company"
+      ]
+    },{
+      "company": "Pinterest",
+      "position": "Programmer",
+      "rank" : "Secondary",
+      "website": "www.pinterest.com",
+      "startDate": "2010-01-01",
+      "endDate": "2012-01-01",
+      "summary": "Description...",
+      "highlights": [
+        "Started the company",
+        "Created a company",
+        "Worked at my company"
       ]
     }],
     "volunteer": [{
@@ -43,11 +63,21 @@
       ]
     }],
     "education": [{
-      "institution": "University",
-      "area": "Software Development",
+      "institution": "Stanford",
+      "area": "Computer Science",
       "studyType": "Bachelor",
       "startDate": "2011-01-01",
       "endDate": "2013-01-01",
+      "gpa": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },{
+      "institution": "Orange Coast College",
+      "area": "Computer Science",
+      "studyType": "Associate",
+      "startDate": "2014-01-01",
+      "endDate": "2020-01-01",
       "gpa": "4.0",
       "courses": [
         "DB1101 - Basic SQL"
@@ -72,18 +102,36 @@
       "keywords": [
         "HTML",
         "CSS",
-        "Javascript"
+        "Javascript",
+        "React",
+        "NodeJS",
+        "Express",
+        "Nginx"
       ]
     }],
     "languages": [{
       "language": "English",
       "fluency": "Native speaker"
+    },{
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Intermediate"
     }],
     "interests": [{
       "name": "Wildlife",
       "keywords": [
         "Ferrets",
         "Unicorns"
+      ]
+    },{
+      "name": "Programming",
+      "keywords": [
+        "React",
+        "HTML",
+        "CSS"
       ]
     }],
     "references": [{

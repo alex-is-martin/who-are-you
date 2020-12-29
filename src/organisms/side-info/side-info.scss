@@ -1,0 +1,78 @@
+@import "../../assets/styles/mixins.scss";
+@import "../../assets/styles/variables.scss";
+
+.side-info {
+  width: 80%;
+
+  .side-container {
+    @include wrap-content;
+    width: 100%;
+    margin-top: 2rem;
+
+    .text-line {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      .text-line-text {
+        @include wrap-content;
+        margin-right: 1rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #bbb;
+      }
+    }
+
+    .side-list {
+      .side-list-item {
+        @include space-elements;
+        width: 100%;
+        list-style-type: none;
+
+        .side-list-left {
+          @include center-elements-virtical;
+          @include wrap-content;
+          margin-top: 1rem;
+
+          .company-text {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #444;
+          }
+
+          .position-text {
+            font-weight: 500;
+            font-size: 0.8rem;
+            color: $primary;
+          }
+
+          .date-text {
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: #ccc;
+          }
+
+          .website-text {
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: #ccc;
+          }
+        }
+
+        .side-list-right {
+          @include wrap-content;
+          @include center-elements;
+          margin-top: 1rem;
+          padding: 0.3rem 0.5rem;
+          background-color: $secondary;
+
+          .rank-text {
+            color: $primary;
+            font-size: 0.7rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

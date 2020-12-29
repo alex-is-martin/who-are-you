@@ -3,7 +3,7 @@ import './button.scss';
 
 function Button(props) {
   return (
-    <a href={props.href} className={props.className}>{props.text}</a>
+    <a className={props.className}>{props.text}</a>
   );
 }
 

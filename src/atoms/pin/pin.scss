@@ -1,0 +1,22 @@
+@import "../../assets//styles/mixins.scss";
+@import "../../assets//styles/variables.scss";
+
+.pin {
+  @include center-elements;
+  @include wrap-content;
+
+  .pin-icon {
+    @include center-elements;
+    color: $location-text-color;
+    padding: 0.2rem 0.5rem;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .location-text {
+    white-space: nowrap;
+    font-size: $location-text-size;
+    font-weight: $location-text-weight;
+    color: $location-text-color;
+  }
+}

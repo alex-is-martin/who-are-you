@@ -1,0 +1,28 @@
+@import "../../assets/styles/mixins.scss";
+
+.image-container {
+  grid-area: image;
+}
+
+.main-info {
+  grid-area: main;
+}
+
+.side-info {
+  grid-area: side;
+}
+
+.info-sections {
+  grid-area: sections;
+}
+
+#profile-info {
+  margin-top: 3rem;
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-areas:
+    "image main"
+    "side sections";
+}
