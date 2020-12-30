@@ -1,51 +1,51 @@
-@import "../../assets/styles/mixins.scss";
-@import "../../assets/styles/variables.scss";
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/variables.scss';
 
 #jumbotron {
-  @include wrap-height;
-  @include center-elements-virtical;
-  position: relative;
-  background-image: $jumbo-gradient;
+	@include wrap-height;
+	@include center-elements-virtical;
+	position: relative;
+	background-image: $jumbo-gradient;
 
-  &::before {
-    background-image: url("../../assets/images/meeting.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.05;
-  }
+	&::before {
+		background-image: url('../../assets/images/meeting.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0.05;
+	}
 
-  #navbar {
-    position: relative;
-  }
+	#navbar {
+		position: relative;
+	}
 
-  .user-img {
-    @include wrap-content;
-    position: relative;
-    width: 30rem;
-    margin: 5rem 0 2rem 0;
-  }
+	.user-img {
+		@include wrap-content;
+		position: relative;
+		width: 30rem;
+		margin: 5rem 0 2rem 0;
+	}
 
-  .user-name {
-    @include wrap-content;
-    position: relative;
-    font-size: $jumbo-name-size;
-    font-weight: $jumbo-name-weight;
-    color: $jumbo-name-color;
-  }
+	.user-name {
+		@include wrap-content;
+		position: relative;
+		font-size: $jumbo-name-size;
+		font-weight: $jumbo-name-weight;
+		color: $jumbo-name-color;
+	}
 
-  .user-job {
-    @include wrap-content;
-    margin: 0 0 6rem 0;
-    position: relative;
-    font-size: $jumbo-job-size;
-    font-weight: $jumbo-job-weight;
-    color: $jumbo-job-color;
-  }
+	.user-job {
+		@include wrap-content;
+		margin: 0 0 6rem 0;
+		position: relative;
+		font-size: $jumbo-job-size;
+		font-weight: $jumbo-job-weight;
+		color: $jumbo-job-color;
+	}
 }

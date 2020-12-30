@@ -16,12 +16,16 @@
       },
       "profiles": [{
         "network": "Twitter",
-        "username": "john",
-        "url": "http://twitter.com/john"
+        "username": "jjTwit",
+        "url": "www.twitter.com/jjTwit"
       },{
         "network": "Facebook",
         "username": "johnnyBoy",
-        "url": "http://facebook.com/johnnyBoy"
+        "url": "www.facebook.com/johnnyBoy"
+      },{
+        "network": "MySpace",
+        "username": "BigBoyJonny",
+        "url": "www.myspace.com/BigBoyJonny"
       }]
     },
     "work": [{
@@ -54,12 +58,12 @@
     "volunteer": [{
       "organization": "Organization",
       "position": "Volunteer",
-      "website": "http://organization.com/",
+      "website": "www.organization.com",
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
       "summary": "Description...",
       "highlights": [
-        "Awarded 'Volunteer of the Month'"
+        "Awarded: Volunteer of the Month", "Worked with greate people", "yes"
       ]
     }],
     "education": [{
@@ -87,13 +91,26 @@
       "title": "Award",
       "date": "2014-11-01",
       "awarder": "Company",
-      "summary": "There is no spoon."
+      "website" : "www.company.com",
+      "summary": "Test test test test test test test test okay cool its on another line"
+    },{
+      "title": "Cool Guy Award",
+      "date": "2012-11-01",
+      "awarder": "Cool Guy Company",
+      "website" : "www.company.com",
+      "summary": "There is spoons."
     }],
     "publications": [{
       "name": "Publication",
       "publisher": "Company",
       "releaseDate": "2014-10-01",
-      "website": "http://publication.com",
+      "website": "www.publication.com",
+      "summary": "Test test test test test test test test okay cool its on another line"
+    },{
+      "name": "Cool Guy Publication",
+      "publisher": "Cool Guy Company",
+      "releaseDate": "2014-10-01",
+      "website": "www.publication.com",
       "summary": "Description..."
     }],
     "skills": [{
@@ -136,6 +153,15 @@
     }],
     "references": [{
       "name": "Jane Doe",
+      "phone" :"(912) 555-4321",
+      "email" :"john@gmail.com",
+      "url" : "www.whoo.com/jane-doe",
+      "reference": "Reference..."
+    },{
+      "name": "John Doe",
+      "phone" :"(912) 555-4321",
+      "email" :"john@gmail.com",
+      "url" : "www.whoo.com/jane-doe",
       "reference": "Reference..."
     }]
   
