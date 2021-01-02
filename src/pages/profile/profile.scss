@@ -1,5 +1,6 @@
-@import "../../assets/styles/mixins.scss";
+@import '../../assets/styles/mixins.scss';
 
 #profile-page {
-  @include center-elements-virtical;
+	@include center-elements-virtical;
+	padding-bottom: 5rem;
 }

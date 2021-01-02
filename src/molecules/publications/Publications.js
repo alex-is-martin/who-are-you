@@ -9,7 +9,7 @@ function Publications() {
 		<div className={profileInfo === 'Publications' ? 'section' : 'hide'}>
 			<span className='section-single-title'>PUBLICATIONS</span>
 			{user.publications.map((publication) => (
-				<div className='sub-section'>
+				<div className='sub-section' key={publication.name}>
 					<div className='info-line'>
 						<span className='info-line-title'>Title:</span>
 						<span className='info-line-user-info'>{publication.name}</span>

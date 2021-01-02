@@ -2,18 +2,18 @@
 @import './assets//styles/variables.scss';
 
 .App {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  font-family: 'Poppins', sans-serif;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	font-family: 'Poppins', sans-serif;
 
-  #horizontal-line {
-    border-top: $line-settings;
-    width: $line-width;
-    margin-top: 0.5rem;
-  }
+	#horizontal-line {
+		border-top: $line-settings;
+		width: $line-width;
+		margin-top: 0.5rem;
+	}
 
-  .hide {
-    display: none;
-  }
+	.hide {
+		display: none;
+	}
 }

@@ -9,7 +9,7 @@ function Awards() {
 		<div className={profileInfo === 'Awards' ? 'section' : 'hide'}>
 			<span className='section-single-title'>AWARDS</span>
 			{user.awards.map((award) => (
-				<div className='sub-section'>
+				<div className='sub-section' key={award.title}>
 					<div className='info-line'>
 						<span className='info-line-title'>Award:</span>
 						<span className='info-line-user-info'>{award.title}</span>

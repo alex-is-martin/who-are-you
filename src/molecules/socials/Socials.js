@@ -9,7 +9,7 @@ function Socials() {
 		<div className={profileInfo === 'Socials' ? 'section' : 'hide'}>
 			<span className='section-single-title'>SOCIALS</span>
 			{user.basics.profiles.map((profile) => (
-				<div className='sub-section'>
+				<div className='sub-section' key={profile.network}>
 					<div className='info-line'>
 						<span className='info-line-title'>Network:</span>
 						<span className='info-line-user-info'>{profile.network}</span>

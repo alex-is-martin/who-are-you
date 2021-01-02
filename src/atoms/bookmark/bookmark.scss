@@ -1,20 +1,21 @@
-@import "../../assets/styles/mixins.scss";
-@import "../../assets/styles/variables.scss";
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/variables.scss';
 
 .bookmark-container {
-  @include wrap-content;
-  @include center-elements;
+	@include wrap-content;
+	@include center-elements;
+	cursor: pointer;
 
-  .bookmark-icon {
-    @include wrap-content;
-    color: $bookmark-text-color;
-    margin-right: 0.5rem;
-    width: 1.5rem;
-  }
+	.bookmark-icon {
+		@include wrap-content;
+		color: $bookmark-text-color;
+		margin-right: 0.5rem;
+		width: 1.5rem;
+	}
 
-  .bookmark-text {
-    font-size: $bookmark-text-size;
-    font-weight: $bookmark-text-weight;
-    color: $bookmark-text-color;
-  }
+	.bookmark-text {
+		font-size: $bookmark-text-size;
+		font-weight: $bookmark-text-weight;
+		color: $bookmark-text-color;
+	}
 }

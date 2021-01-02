@@ -1,24 +1,30 @@
-@import "../../assets/styles/variables.scss";
-@import "../../assets/styles/mixins.scss";
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
 
 #navbar {
-  @include center-elements;
-  @include wrap-height;
-  padding: 0rem 1rem;
-  background-color: $navbar-color;
-  border-bottom: $navbar-line;
-  box-sizing: border-box;
-  justify-content: space-between;
+	@include center-elements;
+	@include wrap-height;
+	padding: 0rem 1rem;
+	background-color: $navbar-color;
+	border-bottom: $navbar-line;
+	box-sizing: border-box;
+	justify-content: space-between;
+	background-color: white;
 
-  .nav-btn-container {
-    @include wrap-content;
+	.logo-wrapper {
+		@include wrap-content;
+	}
 
-    .link {
-      text-decoration: none;
-    }
-  }
+	.link {
+		text-decoration: none;
+	}
 
-  .btn-img {
-    width: $logo-width;
-  }
+	.nav-btn-container {
+		@include wrap-content;
+		@include center-elements-horizontal;
+	}
+
+	.btn-img {
+		width: $logo-width;
+	}
 }

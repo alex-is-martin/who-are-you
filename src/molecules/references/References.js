@@ -9,7 +9,7 @@ function References() {
 		<div className={profileInfo === 'References' ? 'section' : 'hide'}>
 			<span className='section-single-title'>REFERENCES</span>
 			{user.references.map((reference) => (
-				<div className='sub-section'>
+				<div className='sub-section' key={reference.name}>
 					<div className='info-line'>
 						<span className='info-line-title'>Name:</span>
 						<span className='info-line-user-info'>{reference.name}</span>

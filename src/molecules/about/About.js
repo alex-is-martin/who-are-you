@@ -43,7 +43,7 @@ function About() {
 			<div className='sub-section'>
 				<span className='section-title'>INTERESTS</span>
 				{user.interests.map(({ name, keywords }) => (
-					<div className='info-line'>
+					<div className='info-line' key={name}>
 						<span className='info-line-title'>{name + ':'}</span>
 						{/* Map through every keyword for each interest and dont add ", " if its the last keyword */}
 						<span className='info-line-user-info'>
@@ -60,7 +60,7 @@ function About() {
 			<div className='sub-section'>
 				<span className='section-title'>LANGUAGES</span>
 				{user.languages.map(({ language, fluency }) => (
-					<div className='info-line'>
+					<div className='info-line' key={language}>
 						<span className='info-line-title'>{language + ':'}</span>
 						<span className='info-line-user-info'>{fluency}</span>
 					</div>

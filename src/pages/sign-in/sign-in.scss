@@ -1,0 +1,100 @@
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/variables.scss';
+
+.sign-in-page {
+	@include center-elements-virtical;
+	// background-color: rgb(251, 251, 251);
+
+	.sign-in-container {
+		@include center-elements;
+		flex-direction: column;
+		background-color: white;
+		width: 25%;
+		height: 70%;
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		margin-top: 5rem;
+
+		.btn-img {
+			width: 100px;
+			margin: 0;
+		}
+
+		.sign-in-title {
+			@include wrap-content;
+			font-weight: 500;
+			color: #444;
+			margin-top: 1rem;
+		}
+
+		.sign-in-sub-title {
+			@include wrap-content;
+			margin-bottom: 3rem;
+			font-weight: 300;
+			color: #777;
+		}
+
+		.link {
+			@include wrap-content;
+			text-decoration: none;
+
+			.forgot-button {
+				@include wrap-content;
+				font-size: 0.8rem;
+				color: $primary;
+				margin-top: 2rem;
+				margin-bottom: 0.5rem;
+				cursor: pointer;
+			}
+		}
+
+		.not-member-text {
+			@include wrap-content;
+			font-size: 0.8rem;
+
+			.create-button {
+				color: $primary;
+				cursor: pointer;
+			}
+		}
+
+		form {
+			@include center-elements-virtical;
+			@include wrap-content;
+
+			.input {
+				@include wrap-content;
+				width: 300px;
+				height: 45px;
+				margin-bottom: 0.5rem;
+				border: 1px solid #ddd;
+				font-family: inherit;
+				color: #666;
+				padding: 0 0.5rem;
+				font-size: 1rem;
+				border-radius: 5px;
+				outline: none;
+
+				&:focus {
+					border: 1px solid $primary;
+				}
+			}
+
+			.login-button {
+				@include wrap-content;
+				width: 315px;
+				height: 50px;
+				margin: 0.5rem 0;
+				background-color: $primary;
+				color: white;
+				font-size: 1rem;
+				font-family: inherit;
+				font-weight: 500;
+				border: none;
+				border-radius: 50px;
+				outline: none;
+				cursor: pointer;
+			}
+		}
+	}
+}

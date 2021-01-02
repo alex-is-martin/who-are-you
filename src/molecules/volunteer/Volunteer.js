@@ -9,7 +9,7 @@ function Volunteer() {
 		<div className={profileInfo === 'Volunteer' ? 'section' : 'hide'}>
 			<span className='section-single-title'>VOLUNTEER</span>
 			{user.volunteer.map((volunteer) => (
-				<div className='sub-section'>
+				<div className='sub-section' key={volunteer.organization}>
 					<div className='info-line'>
 						<span className='info-line-title'>Organization:</span>
 						<span className='info-line-user-info'>

@@ -79,6 +79,8 @@
 			@include center-elements;
 			white-space: nowrap;
 			margin-right: 2rem;
+			cursor: pointer;
+			user-select: none;
 
 			.report-button {
 				color: #ccc;
